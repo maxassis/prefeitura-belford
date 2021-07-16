@@ -26,9 +26,24 @@ export default function Section1() {
               </p>
             </div>
             <S.Status>
-              <div>teste</div>
-              <div>teste</div>
-              <div>teste</div>
+              <S.Item>
+                <h2>1</h2>
+                <h3>Pendente</h3>
+                <p>Você possui uma solicitação pendente!</p>
+                <a href="#">ver todas</a>
+              </S.Item>
+              <S.Item>
+                <h2 style={{ color: "#585858" }}>1</h2>
+                <h3 style={{ color: "#585858" }}>Processando</h3>
+                <p>Envie novas informações ou aguarde uma resposta</p>
+                <a href="#">ver todas</a>
+              </S.Item>
+              <S.Item>
+                <h2 style={{ color: "#585858" }}>1</h2>
+                <h3 style={{ color: "#585858" }}>Finalizada</h3>
+                <p>Envie novas informações ou aguarde uma resposta</p>
+                <a href="#">ver todas</a>
+              </S.Item>
             </S.Status>
           </S.Requests>
         </S.Curses>

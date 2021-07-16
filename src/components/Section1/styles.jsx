@@ -85,3 +85,36 @@ export const Status = styled.div`
   grid-column-gap: 2.778125rem;
   border: 1px solid red;
 `;
+
+export const Item = styled.div`
+  h2 {
+    text-align: left;
+    font: bold 33px/24px;
+      color: #f15a24;
+    }
+  }
+
+  h3 {
+    text-align: left;
+    font: bold 1.125rem/1.5rem;
+    color: #f15a24;
+  }
+
+  p {
+    text-align: left;
+    font-size: 0.875rem;
+    color: #585858;
+    opacity: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  a{
+    color:#4285F4;
+    text-align: left;
+    text-decoration: underline;
+    font: bold 16px;
+    color: #4285F4;
+    opacity: 1;
+  }
+
+`;
