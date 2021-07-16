@@ -145,6 +145,7 @@ export const ButtonDiv = styled.div`
     padding: 0 23px;
     text-align: center;
     font: bold 14px;
+    font-weight: bold;
     color: #ffffff;
     opacity: 1;
     border-radius: 0.25rem;
@@ -212,8 +213,8 @@ export const Item = styled.div`
     color:#4285F4;
     text-align: left;
     text-decoration: underline;
-    font: bold 16px;
-    color: #4285F4;
+    font: 16px;
+    font-weight: bold;
     opacity: 1;
   }
 

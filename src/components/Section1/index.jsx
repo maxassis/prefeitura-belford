@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../container/index.jsx";
 import * as S from "./styles.jsx";
 import user from "../../assets/imgs/user.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -76,7 +75,7 @@ export default function Section1() {
                 <a href="#">ver todas</a>
               </S.Item>
               <S.Item>
-                <h2 style={{ color: "#585858" }}>1</h2>
+                <h2 style={{ color: "#585858" }}>2</h2>
                 <h3 style={{ color: "#585858" }}>Processando</h3>
                 <p>Envie novas informações ou aguarde uma resposta</p>
                 <a href="#">ver todas</a>

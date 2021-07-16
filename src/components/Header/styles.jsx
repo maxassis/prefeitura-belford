@@ -32,6 +32,10 @@ export const List = styled.ul`
   font-weight: bold;
   color: #585858;
   opacity: 1;
+
+  li {
+    cursor: pointer;
+  }
 `;
 
 export const SecondList = styled.ul`
@@ -41,6 +45,10 @@ export const SecondList = styled.ul`
   color: #585858;
   opacity: 1;
   margin-right: 1.875rem;
+
+  li {
+    cursor: pointer;
+  }
 
   li:nth-child(2) {
     margin-left: 0.8125rem;
