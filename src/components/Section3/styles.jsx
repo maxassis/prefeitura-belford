@@ -98,7 +98,7 @@ export const WrapperMatricula = styled.div`
 
   h4 {
     text-align: left;
-    font: 14px;
+    font-size: 0.875rem;
     color: #585858;
   }
 `;
@@ -116,6 +116,7 @@ export const WrapperButton = styled.div`
     font-weight: bold;
     color: #4285f4;
     cursor: pointer;
+    font-size: 0.875rem;
   }
 
   a:nth-child(2) {
@@ -125,7 +126,7 @@ export const WrapperButton = styled.div`
     padding: 0 0.9375rem;
     cursor: pointer;
     text-align: center;
-    font: 0.875rem;
+    font-size: 0.875rem;
     font-weight: bold;
     color: #ffffff;
   }

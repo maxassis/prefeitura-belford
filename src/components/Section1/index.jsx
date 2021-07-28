@@ -61,7 +61,7 @@ export default function Section1() {
 
           <S.Requests>
             <h3>Minhas solicitações (4)</h3>
-            <div style={{ width: "26.8125rem" }}>
+            <div style={{ "max-width": "26.8125rem" }}>
               <p>
                 Acompanhe aqui o andamento de todas as suas solicitações aberta
                 da SEMA

@@ -17,17 +17,28 @@ img {
   display: block;
 }
 
+
+
+ html {
+  @media (max-width: 480px) {
+    font-size: 12px;
+}
+} 
+
+
+
+
+
 button {
   background-color: transparent;
   cursor: pointer;
 }
 
-
-
-
-
-
-
+.swiper-pagination-bullet {
+  background: #208E76;
+  width: 0.75rem;
+  height: 0.75rem;
+  } 
 `;
 
 export default GlobalStyles;

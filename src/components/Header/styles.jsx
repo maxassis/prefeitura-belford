@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { User } from "@styled-icons/remix-line/User";
 import { DownArrow } from "@styled-icons/boxicons-solid/DownArrow";
+import media from "styled-media-query";
 
 export const ExternalContainer = styled.div`
   background-color: #ffffff;
@@ -13,6 +14,10 @@ export const WrapperMain = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+
+  ${media.lessThan("small")`
+    justify-content: center;
+  `}
 `;
 
 export const WrapperLogo = styled.div`
@@ -22,8 +27,12 @@ export const WrapperLogo = styled.div`
 `;
 
 export const Img = styled.img`
-  max-width: 100%;
-  width: 13.5625rem;
+  width: 100%;
+  max-width: 217px;
+
+  ${media.lessThan("small")`
+  width: 250px;
+  `};
 `;
 
 export const List = styled.ul`
@@ -36,6 +45,14 @@ export const List = styled.ul`
   li {
     cursor: pointer;
   }
+
+  ${media.lessThan("large")`
+    gap: 1rem;
+  `}
+
+  ${media.lessThan("medium")`
+    display: none;
+  `}
 `;
 
 export const SecondList = styled.ul`
@@ -53,6 +70,10 @@ export const SecondList = styled.ul`
   li:nth-child(2) {
     margin-left: 0.8125rem;
   }
+
+  ${media.lessThan("medium")`
+    display: none;
+  `}
 `;
 
 export const Icon = styled(User)`

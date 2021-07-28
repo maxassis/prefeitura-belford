@@ -2,6 +2,7 @@ import { Container } from "../container/index.jsx";
 import styled from "styled-components";
 import planta from "../../assets/imgs/planta2.png";
 import jardinagem from "../../assets/imgs/jardinagem2.png";
+import media from "styled-media-query";
 
 export const ExternalContainer = styled.div`
   background-color: #f5f5f5;
@@ -35,19 +36,46 @@ export const User = styled.div`
     font: bold 1.5rem/2rem;
     opacity: 1;
     color: #3b3a3a;
+
+    @media (max-width: 610px) {
+      text-align: center;
+      margin-bottom: 1.5625rem;
+    }
   }
 
   img {
     width: 18.8125rem;
     height: 12.8125rem;
     align-self: flex-end;
+
+    @media (max-width: 610px) {
+      margin: 0 auto;
+    }
   }
+
+  @media (max-width: 610px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ${media.lessThan("small")`
+      padding-top: 1.25rem;
+      padding-left: 0;
+      padding-right: 0;
+  `}
 `;
 
 export const Curses = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  ${media.lessThan("medium")`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `}
 `;
 
 export const MyCurses = styled.div`
@@ -179,12 +207,27 @@ export const Requests = styled.div`
     margin-top: 0.625rem;
     margin-bottom: 2.375rem;
   }
+
+  ${media.lessThan("small")`
+      margin-top: 1.5625rem;
+  `}
 `;
 
 export const Status = styled.div`
   display: grid;
   grid-template-columns: 11rem 11rem 11rem;
   grid-column-gap: 2.778125rem;
+
+  @media (max-width: 980px) {
+    grid-column-gap: 0.625rem;
+    grid-template-columns: auto auto auto;
+  }
+
+  ${media.lessThan("small")`
+    display: flex;
+    flex-direction: column;
+    gap: 1.3125rem;
+  `}
 `;
 
 export const Item = styled.div`
@@ -199,6 +242,11 @@ export const Item = styled.div`
     text-align: left;
     font: bold 1.125rem/1.5rem;
     color: #f15a24;
+
+    @media (max-width: 980px) {
+      font-size: 18px;
+  } 
+
   }
 
   p {
@@ -217,5 +265,14 @@ export const Item = styled.div`
     font-weight: bold;
     opacity: 1;
   }
+
+  @media (max-width: 980px) {
+    max-width: 133px;
+  }  
+
+ 
+  ${media.lessThan("small")`
+    max-width: 100%;
+  `}
 
 `;
