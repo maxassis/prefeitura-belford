@@ -103,8 +103,13 @@ width:18.75rem;
       color: #ffffff;
       opacity: 1;
       font-size: 24px;
+
+      @media (max-width: 480px) {
+        font-size: 1.4rem;
+  }
     }
   }
+
 `;
 
 export const SliderDiv = styled.div`
@@ -208,7 +213,7 @@ export const Requests = styled.div`
     margin-bottom: 2.375rem;
   }
 
-  ${media.lessThan("small")`
+  ${media.lessThan("medium")`
       margin-top: 1.5625rem;
   `}
 `;

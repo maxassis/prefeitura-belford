@@ -22,9 +22,27 @@ export default function Section3() {
       <div className={styles.SliderWrapper}>
         <Swiper
           slidesPerView={4}
-          spaceBetween={24}
+          spaceBetween={3}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.6,
+              spaceBetween: 16,
+            },
+            600: {
+              slidesPerView: 2.6,
+              spaceBetween: 15,
+            },
+            900: {
+              slidesPerView: 4,
+              spaceBetween: 15,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 24,
+            },
           }}
           className={styles.mySwiper}
         >

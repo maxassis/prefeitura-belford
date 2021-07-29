@@ -40,7 +40,7 @@ export const Card = styled.div`
 `;
 
 export const Image = styled.div`
-  width: 14.9375rem;
+  width: 100%;
   height: 12.5625rem;
   background-image: url(${planta});
   background-repeat: no-repeat;
@@ -57,14 +57,17 @@ export const Image = styled.div`
 
 export const Image2 = styled(Image)`
   background-image: url(${jardinagem});
+  width: 100%;
 `;
 
 export const Image3 = styled(Image)`
   background-image: url(${regar});
+  width: 100%;
 `;
 
 export const Image4 = styled(Image)`
   background-image: url(${regar2});
+  width: 100%;
 `;
 
 export const Gradient = styled.div`
