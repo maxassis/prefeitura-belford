@@ -3,7 +3,7 @@ import * as S from "./styles";
 import { Container } from "../container";
 import Logo from "../../assets/logo.jpg";
 
-export default function Header() {
+export default function Header({ Show }) {
   return (
     <S.ExternalContainer>
       <Container>
@@ -11,24 +11,28 @@ export default function Header() {
           <S.WrapperLogo>
             <S.Img src={Logo} alt="logo" />
 
-            <S.List>
-              <li>Página inicial</li>
-              <li>Solicitação</li>
-              <li>Cursos</li>
-            </S.List>
+            {Show && (
+              <S.List>
+                <li>Página inicial</li>
+                <li>Solicitação</li>
+                <li>Cursos</li>
+              </S.List>
+            )}
           </S.WrapperLogo>
 
-          <S.SecondList>
-            <li>
-              <S.Icon />
-            </li>
-            <li>
-              <span>Área do usuário</span>
-            </li>
-            <li>
-              <S.ArrowIcon />
-            </li>
-          </S.SecondList>
+          {Show && (
+            <S.SecondList>
+              <li>
+                <S.Icon />
+              </li>
+              <li>
+                <span>Área do usuário</span>
+              </li>
+              <li>
+                <S.ArrowIcon />
+              </li>
+            </S.SecondList>
+          )}
         </S.WrapperMain>
       </Container>
     </S.ExternalContainer>
