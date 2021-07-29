@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles.jsx";
-import face from "../../../assets/imgs/face.svg";
+import face from "../../assets/imgs/face.svg";
 
 export default function Section4() {
   return (

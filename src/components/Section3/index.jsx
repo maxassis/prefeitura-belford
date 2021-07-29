@@ -28,11 +28,11 @@ export default function Section3() {
           }}
           breakpoints={{
             320: {
-              slidesPerView: 1.6,
+              slidesPerView: 1.7,
               spaceBetween: 16,
             },
             600: {
-              slidesPerView: 2.6,
+              slidesPerView: 2.7,
               spaceBetween: 15,
             },
             900: {

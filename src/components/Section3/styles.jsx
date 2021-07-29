@@ -4,10 +4,17 @@ import planta from "../../assets/imgs/planta1.png";
 import jardinagem from "../../assets/imgs/jardinagem2.png";
 import regar from "../../assets/imgs/regar.png";
 import regar2 from "../../assets/imgs/regar2.png";
+import media from "styled-media-query";
 
 export const ContainerMain = styled(Container)`
   padding-top: 3.4613rem;
   padding-bottom: 1.25rem;
+
+  ${media.lessThan("small")`
+    padding-top: 1.4613rem;
+    padding-right: 0px;
+    padding-left: 0px;
+  `}
 `;
 
 export const WrapperTitle = styled.div`
@@ -27,6 +34,18 @@ export const WrapperTitle = styled.div`
     color: #585858;
     opacity: 1;
   }
+
+  ${media.lessThan("medium")`
+    padding: 0 0.9375rem;
+
+    h3{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 12px;
+    }
+  `}
 `;
 
 export const Card = styled.div`
