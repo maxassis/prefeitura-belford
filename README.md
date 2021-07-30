@@ -29,7 +29,7 @@ dentro da pasta do projeto execute o comando para rodar a aplicação
 
 ## Deploy
 
-[max-belford.netlify.app](max-belford.netlify.app)
+[https://max-belford.netlify.app](https://max-belford.netlify.app)
 
 ## Telas
 
