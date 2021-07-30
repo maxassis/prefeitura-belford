@@ -15,7 +15,7 @@ Styled components e SwiperJs
 
 Clone o projeto utilizando o comando:
 
-`https://github.com/maxassis/Ensinio.git`
+`https://github.com/maxassis/prefeitura-belford.git`
 
 em seguida acesse a pasta do projeto e faça a instalação:
 
@@ -34,4 +34,10 @@ dentro da pasta do projeto execute o comando para rodar a aplicação
 ## Telas
 
 
+
+![](https://raw.githubusercontent.com/maxassis/prefeitura-belford/master/src/assets/imgs/screen1.png?token=AOBXVP2T34IJONJNXSZXQPLBARFC4)
+
+![](https://raw.githubusercontent.com/maxassis/prefeitura-belford/master/src/assets/imgs/screen2.png?token=AOBXVPZF5HXYX6Q7ZUFDEQTBARFGC)
+
+![](https://raw.githubusercontent.com/maxassis/prefeitura-belford/master/src/assets/imgs/screen3.png?token=AOBXVP2R65H2FPLZGRSIJX3BARFJ6)
 
