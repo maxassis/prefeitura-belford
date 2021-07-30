@@ -1,10 +1,21 @@
 import styled from "styled-components";
 import { Container } from "../../components/container";
+import media from "styled-media-query";
+
+export const ExternalContainer = styled.div`
+  background-color: #f5f5f5;
+`;
 
 export const ContainerMain = styled(Container)`
   padding-top: 1.875rem;
   display: flex;
   gap: 2.4044rem;
+
+  @media (max-width: 1030px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 3.875rem;
+  }
 `;
 
 export const WrapperImage = styled.div`
@@ -16,6 +27,12 @@ export const WrapperImage = styled.div`
   img {
     position: absolute;
   }
+
+  ${media.lessThan("small")`
+  display: flex;
+  justify-content: center;
+  width: 28.1875rem;
+  `}
 `;
 
 export const Text1 = styled.div`
@@ -40,6 +57,11 @@ export const Text1 = styled.div`
   img {
     position: relative;
   }
+
+  ${media.lessThan("small")`
+  max-width: 10.3125rem;
+    height: 2.5625rem;
+  `}
 `;
 
 export const Text2 = styled.div`
@@ -64,6 +86,12 @@ export const Text2 = styled.div`
   img {
     position: relative;
   }
+
+  ${media.lessThan("small")`
+    max-width: 11.3125rem;
+    height: 2.5625rem;
+    right: 0.5rem;
+  `}
 `;
 
 export const Text3 = styled.div`
@@ -88,6 +116,12 @@ export const Text3 = styled.div`
   img {
     position: relative;
   }
+
+  ${media.lessThan("small")`
+  max-width: 10.3125rem;
+    height: 2.5625rem;
+    left: 3.5rem;
+  `}
 `;
 
 export const LoginBox = styled.div`
